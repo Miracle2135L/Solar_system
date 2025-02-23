@@ -1,0 +1,38 @@
+body,.space{
+    background-color: rgb(4, 39, 70);
+}
+.space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    margin: 0px;
+    padding: 0px;
+}
+.sun,.earth,.moon{
+    border: 0px solid;
+    border-radius: 50%;
+}
+.sun {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    animation: orbit 36.5s linear 0s infinite normal;
+}
+.earth{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    margin: 200px;
+    animation: orbit 2.7s linear 0s infinite normal
+}
+.moon{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    margin: 100px;
+}
+@keyframes orbit {
+    0% {rotate: 0deg;}
+    100% {rotate: 360deg;}
+}
